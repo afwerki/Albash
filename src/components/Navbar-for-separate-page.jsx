@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { Link,  animateScroll as scroll } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import logo from '../images/dcsLogo.png';
 
 
@@ -20,11 +20,16 @@ const Navbar = () => {
         </div>
             <div className='flex items-center cursor-pointer '>
                 <ul className='hidden md:flex'>
-                <li> <Link to="home" smooth={true}  duration={500}>Home</Link></li>
-                <li > <Link to="about" smooth={true} offset={-200} duration={500}>About Us</Link></li>
-                <li > <Link to="smartTools" smooth={true} offset={-50} duration={500}>Smart Tools</Link></li>
-                <li > <Link to="smartTools" smooth={true} offset={-100} duration={500}>Services</Link></li>
-                <li > <Link to="resources" smooth={true} offset={-50} duration={500}>Resoruces</Link></li>
+                <li> <Link to="home">Home</Link></li>
+                {/* smooth={true}  duration={500} */}
+                <li > <Link to="about">About Us</Link></li>
+                {/*  smooth={true} offset={-200} duration={500}*/}
+                <li > <Link to="smartTools" >Smart Tools</Link></li>
+                {/*  smooth={true} offset={-50} duration={500}*/}
+                <li > <Link to="smartTools" >Services</Link></li>
+                {/* smooth={true} offset={-100} duration={500}*/}
+                <li > <Link to="resources" >Resoruces</Link></li>
+                {/* smooth={true} offset={-50} duration={500}*/}
                 </ul>
             </div>
             <div className='hidden md:flex md:flex pr-4'>

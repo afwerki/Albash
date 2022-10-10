@@ -11,27 +11,34 @@ import Pagniation from './components/Pagniation';
 import Contact from "./components/Contact";
 import Hero1 from "./components/Hero1";
 import MegaMenu from "./components/MegaMenu";
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
 function App() {
   return (
-    <>
+    <div className="App">
+      <Router>
+
      <Navbar/>
-     <Hero/>
-     {/* <MegaMenu/> */}
-     {/* <Hero1/> */}
-     
+     <Routes>
+      <Route path="/" element={<Hero/>}/>
+      <Route path="/SmartTools" element={ <SmartTools/>}/>
+      <Route path="/Resources" element={<Resources/>}/>
+      <Route path="/About" element={<About/>}/>
+      <Route path="/Teams" element={ <Teams/>}/>
+      <Route path="/Contact" element={<Contact/>}/>
+     </Routes>
+      </Router>
+
+     {/* <Hero/>
      <SmartTools/>
      <Resources/>
      <About/>
      <Teams/>
-     <Contact/>
+     <Contact/> */}
 
-     {/* <Pagniation/> */}
-     {/* <Login/> */}
-     {/* <Pricing/> */}
      <Footer/>
-    </>
+    </div>
   );
 }
 
