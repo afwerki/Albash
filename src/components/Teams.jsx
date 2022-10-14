@@ -9,7 +9,25 @@ import me from "../images/me.jpg";
 const Teams = () => {
   return (
     <div>
-      <figure class="md:flex bg-slate-100 rounded-xl p-12 md:p-0 text-primary-lightgreen">
+      <div class="min-w-screen min-h-screen bg-gray-50 flex items-center justify-center py-5">
+        <div class="w-full bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
+          <div class="w-full max-w-6xl mx-auto">
+            <div class="text-center max-w-xl mx-auto">
+              <h1 class="text-6xl md:text-7xl font-bold mb-5 text-gray-600">
+                Our Team
+              </h1>
+              {/* <h3 class="text-xl mb-5 font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h3> */}
+              <div class="text-center mb-10">
+                <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                <span class="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>
+                <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+              </div>
+            </div>
+            <figure class="md:flex bg-slate-100 rounded-xl p-12 md:p-0 dark:bg-slate-800">
         <img
           class="w-24 h-24 rounded-full mx-auto"
           src={Jay}
@@ -19,7 +37,8 @@ const Teams = () => {
         />
         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
           <figcaption class="font-medium">
-            <div class="text-primary-lightgreen font-sans-serif">
+            <div class="text-sky-500 dark:text-sky-400 font-sans-serif">
+              {" "}
               Dr. Jay Verma
             </div>
             <div class="text-slate-700 dark:text-slate-500 font-sans-serif">
@@ -51,7 +70,7 @@ const Teams = () => {
         />
         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
           <figcaption class="font-medium">
-            <div class="text-primary-lightgreen font-sans-serif">
+            <div class="text-sky-500 dark:text-sky-400 font-sans-serif">
               Dr. Sukin Natarajan
             </div>
             <div class="text-slate-700 dark:text-slate-500 font-sans-serif">
@@ -76,162 +95,183 @@ const Teams = () => {
           </blockquote>
         </div>
       </figure>
-      <div className="pb-16 font-sans-serif">
-        {/* Code block starts */}
-        <dh-component>
-          <section className="max-w-8xl mx-auto container bg-white pt-16">
-            <div>
-              <div
-                role="contentinfo"
-                className="flex items-center flex-col px-4"
-              ></div>
-              <div
-                tabIndex={0}
-                aria-label="group of cards"
-                className="focus:outline-none mt-20 flex flex-wrap justify-center gap-10 px-4"
-              >
-                <div
-                  tabIndex={0}
-                  aria-label="card 1"
-                  className="focus:outline-none flex sm:w-full md:w-5/12 pb-20"
-                >
-                  <div className="w-20 h-20 relative mr-5">
-                    <div className="absolute top-0 right-0 rounded w-16 h-16 mt-2 mr-1" />
-                    <div class="w-24 h-24 rounded-full mx-auto">
-                      <img src={darrel} alt="drawer" width="384" height="512" />
+            <div class="-mx-3 md:flex items-start">
+              <div class="px-3 md:w-1/3">
+                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div class="w-full flex mb-4 items-center">
+                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                      <img src={darrel} alt=""></img>
+                    </div>
+                    <div class="flex-grow pl-3">
+                      <h6 class="font-bold text-sm  text-gray-600">
+                      Darrell
+                      </h6>
+                      <p className="text-gray-800 text-sm">
+                    Operations Manager
+                  </p>
                     </div>
                   </div>
-                  <div className="w-10/12">
-                    <h2
-                      tabIndex={0}
-                      className="focus:outline-none text-lg font-bold leading-tight text-gray-800"
-                    >
-                      Darrel
-                    </h2>
-                    <p
-                      tabIndex={0}
-                      className="focus:outline-none text-base text-gray-600 leading-normal pt-2"
-                    >
-                      Darrell Clamp is the new Operations Manager for
-                      Datacaresolutions and joined in August 2022. He have come
-                      from a varied background starting with 22 years in the
-                      British Army from the age of 18, to the past 10 years of
-                      working in the Oil and Gas Industry. Darrell is a
-                      passionate believer in the NHS and especially around
-                      patient care and how the NHS can better deliver their
-                      services in an ever changing environment and deliver the
-                      services to all.
+                  <div class="w-full">
+                    <p class="text-sm leading-tight">
+                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                        "
+                      </span>
+                      Darrell is a passionate believer in the NHS and especially
+                    around patient care and how the NHS can better deliver their
+                    services in an ever changing environment and deliver the
+                    services to all.
+                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                        "
+                      </span>
                     </p>
                   </div>
                 </div>
-                <div
-                  tabIndex={0}
-                  aria-label="card 2"
-                  className="focus:outline-none flex sm:w-full md:w-5/12 pb-20"
-                >
-                  <div className="w-20 h-20 relative mr-5">
-                    <div className="absolute top-0 right-0 bg-indigo-100 rounded w-16 h-16 mt-2 mr-1" />
-                    <div className="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
-                      <img src={Bavana} alt="check" />
+                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div class="w-full flex mb-4 items-center">
+                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                      <img src="https://i.pravatar.cc/100?img=2" alt=""></img>
+                    </div>
+                    <div class="flex-grow pl-3">
+                      <h6 class="font-bold text-sm uppercase text-gray-600">
+                      Tariq
+                      </h6>
+                      <p className="text-gray-800 text-sm">
+                      Product Design Head
+                  </p>
                     </div>
                   </div>
-                  <div className="w-10/12">
-                    <h2
-                      tabIndex={0}
-                      className="focus:outline-none text-lg font-semibold leading-tight text-gray-800"
-                    >
+                  <div class="w-full">
+                    <p class="text-sm leading-tight">
+                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                        "
+                      </span>
+                      The emphasis on innovation and technology in our companies
+                    has resulted in a few of them establishing global benchmarks
+                    in product design and development.
+                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                        "
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="px-3 md:w-1/3">
+                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div class="w-full flex mb-4 items-center">
+                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                      <img src={Bavana} alt=""></img>
+                    </div>
+                    <div class="flex-grow pl-3">
+                      <h6 class="font-bold text-sm uppercase text-gray-600">
                       Bhuvana Dhruva
-                    </h2>
-                    <span>AI Engineer</span>
-                    <p
-                      tabIndex={0}
-                      className="focus:outline-none text-base text-gray-600 leading-normal pt-2"
-                    >
-                      Bhuvana Dhruva holds a master's degree in Advanced
-                      Computer Science from the University of Reading. As a
-                      machine learning engineer, she helps translate business
-                      problems to AI solutions. She has been instrumental in
-                      developing machine learning models to help identify asthma
-                      patients in primary care for the Health Foundation
-                      project. She has worked on many natural language
-                      processing (NLP) projects and also has a publication in
-                      her portfolio. Bhuvana has a passion for problem solving
-                      and believes in working to help improve patient care
-                      through her work. Has been a solutions developer in the
-                      past providing reporting solutions to clients
+                      </h6>
+                      <p className="text-gray-800 text-sm">
+                    AI Engineer
+                  </p>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <p class="text-sm leading-tight">
+                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                        "
+                      </span>
+                      Bhuvana has a passion for problem solving and believes in
+                    working to help improve patient care through her work.
+                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                        "
+                      </span>
                     </p>
                   </div>
                 </div>
-                <div
-                  tabIndex={0}
-                  aria-label="card 3"
-                  className="focus:outline-none flex sm:w-full md:w-5/12 pb-20"
-                >
-                  <div className="w-20 h-20 relative mr-5">
-                    <div className="absolute top-0 right-0 bg-indigo-100 rounded w-16 h-16 mt-2 mr-1" />
-                    <div className="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
-                      <img src={sasha} alt="html tag" />
+                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div class="w-full flex mb-4 items-center">
+                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                      <img src={sasha} alt=""></img>
                     </div>
-                  </div>
-                  <div className="w-10/12">
-                    <h2
-                      tabIndex={0}
-                      className="focus:outline-none text-lg font-semibold leading-tight text-gray-800"
-                    >
+                    <div class="flex-grow pl-3">
+                      <h6 class="font-bold text-sm uppercase text-gray-600">
                       Sascha
-                    </h2>
-                    <span>Data Scientist</span>
-                    <p
-                      tabIndex={0}
-                      className="focus:outline-none text-base text-gray-600 leading-normal pt-2"
-                    >
-                      Sascha started my his career as a researcher in
-                      computational materials science, where he was modelling
-                      materials exposed to the extreme conditions experienced in
-                      a fusion reactor. Subsequently he spent 10 years in the
-                      financial services, primary in roles focussed on
-                      processing and analysing financial data. During this time,
-                      he became qualified as a Professional Risk Manager (PRM)
-                      in finance. In 2020 Sascha started working with DCS on the
-                      application of machine learning techniques in identifying
-                      asthma patients, as part of a project funded by the Health
-                      Foundation
+                      </h6>
+                      <p className="text-gray-800 text-sm">
+                    Data Scientist
+                  </p>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <p class="text-sm leading-tight">
+                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                        "
+                      </span>
+                      Sasha works with DCS on the application of machine learning
+                    techniques in identifying asthma patients, as part of a
+                    project funded by the Health Foundation
+                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                        "
+                      </span>
                     </p>
                   </div>
                 </div>
-                <div
-                  tabIndex={0}
-                  aria-label="card 4"
-                  className="focus:outline-none flex sm:w-full md:w-5/12 pb-20"
-                >
-                  <div className="w-20 h-20 relative mr-5">
-                    <div className="absolute top-0 right-0 bg-indigo-100 rounded w-16 h-16 mt-2 mr-1" />
-                    <div className="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
-                      <img src={me} alt="monitor" />
+              </div>
+              <div class="px-3 md:w-1/3">
+                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div class="w-full flex mb-4 items-center">
+                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                      <img src={me} alt=""></img>
+                    </div>
+                    <div class="flex-grow pl-3">
+                      <h6 class="font-bold text-sm uppercase text-gray-600">
+                      Afwerki Ghirmay
+                      </h6>
+                      <p className="text-gray-800 text-sm">
+                  Software Developer
+                  </p>
                     </div>
                   </div>
-                  <div className="w-10/12">
-                    <h2
-                      tabIndex={0}
-                      className="focus:outline-none text-lg font-semibold leading-tight text-gray-800"
-                    >
-                      Afwerki Ghirmay
-                    </h2>
-                    <span>Software Developer</span>
-                    <p
-                      tabIndex={0}
-                      className="focus:outline-none text-base text-gray-600 leading-normal pt-2"
-                    >
+                  <div class="w-full">
+                    <p class="text-sm leading-tight">
+                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                        "
+                      </span>
                       Afwerki Ghirmay graduated from London South bank
                       University with a Computer Science degree. he recently
                       joined the data care solutions as software developer.
+                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                        "
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div class="w-full flex mb-4 items-center">
+                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                      <img src="https://i.pravatar.cc/100?img=6" alt=""></img>
+                    </div>
+                    <div class="flex-grow pl-3">
+                      <h6 class="font-bold text-sm uppercase text-gray-600">
+                      Sarah Rees
+                      </h6>
+                      <p className="text-gray-800 text-sm">
+                    Product Design Head
+                  </p>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <p class="text-sm leading-tight">
+                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                        "
+                      </span>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatem iusto, explicabo, cupiditate quas totam!
+                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                        "
+                      </span>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </dh-component>
+          </div>
+        </div>
       </div>
     </div>
   );

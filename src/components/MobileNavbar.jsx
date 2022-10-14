@@ -1,0 +1,89 @@
+<ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
+        <li>
+          {" "}
+          <Link onClick={handleClose} to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className="border-b-2 border-zinc-300 w-full">
+          {" "}
+          <Link
+            onClick={handleClose}
+            to="about"
+            smooth={true}
+            offset={-200}
+            duration={500}
+          >
+            About Us
+          </Link>
+        </li>
+        <li className="border-b-2 border-zinc-300 w-full">
+          {" "}
+          <Link
+            onClick={handleClose}
+            to="smartTools"
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Smart Tools
+          </Link>
+        </li>
+        <li className="border-b-2 border-zinc-300 w-full">
+          {" "}
+          <Link
+            onClick={handleClose}
+            to="smartTools"
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Services
+          </Link>
+        </li>
+
+        <li className="border-b-2 border-zinc-300 w-full">
+          {" "}
+          <Link
+            onClick={handleClose}
+            to="Training"
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Training
+          </Link>
+        </li>
+        <li className="border-b-2 border-zinc-300 w-full">
+          {" "}
+          <Link
+            onClick={handleClose}
+            to="Case_Study"
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Case Study
+          </Link>
+        </li>
+        <li className="border-b-2 border-zinc-300 w-full">
+          {" "}
+          <Link
+            onClick={handleClose}
+            to="resources"
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Resources
+          </Link>
+        </li>
+
+        <div className="flex flex-col my-4">
+          <button className="bg-transparent text-primary-lightgreen px-8 py-3 mb-4">
+            Login
+          </button>
+          <button className="px-8 py-3">Contact Us</button>
+        </div>
+      </ul>
+      

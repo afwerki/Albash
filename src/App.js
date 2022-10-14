@@ -1,37 +1,55 @@
 import About from "./components/About";
 import Resources from "./components/Resources";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+// import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
-import SmartTools from "./components/SmartTools";
-import Teams from "./components/Teams1";
+import Smart_Tools_detail from "./components/Smart_Tools_detail";
+import Teams from "./components/Teams";
 import Login from "./components/Login";
 import Pagniation from './components/Pagniation';
 import Contact from "./components/Contact";
-import Hero1 from "./components/Hero1";
+import Hero from "./components/Hero";
 import MegaMenu from "./components/MegaMenu";
+import Training from "./components/Training";
+import CaseStudy from "./components/Case_Study";
+import Service_detail from "./components/Service_detail";
+import Dashboard from './components/Dashboard'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {
+  CloudUploadIcon,
+  FolderAddIcon,
+  DatabaseIcon,
+  PaperAirplaneIcon,
+  ServerIcon,
+} from "@heroicons/react/solid";
+import bgimg from "./images/cyber-bg.png";
+import Home from "./components/Home";
 
 
 function App() {
   return (
     <>
+    <Router>
      <Navbar/>
-     <Hero/>
-     {/* <MegaMenu/> */}
-     {/* <Hero1/> */}
+    
+    
+     <Routes>
+      <Route path="/" element={ <Home/>}/>
+      <Route path="/Smart_Tools_detail" element={ <Smart_Tools_detail/>}/>
+      <Route path="/Service_detail" element={ <Service_detail/>}/>
+      <Route path="/Resources" element={<Resources/>}/>
+      <Route path="/Login" element={ <Login/>}/>
+      <Route path="/Training" element={   <Training/>}/>
+      <Route path="/Case_Study" element={<CaseStudy/>}/>
+      <Route path="/About" element={<About/>}/>
+      <Route path="/Teams" element={ <Teams/>}/>
+      <Route path="/Dashboard" element={<Dashboard/>}/>
+     </Routes>
+      </Router>
      
-     <SmartTools/>
-     <Resources/>
-     <About/>
-     <Teams/>
-     <Contact/>
-
-     {/* <Pagniation/> */}
-     {/* <Login/> */}
-     {/* <Pricing/> */}
      <Footer/>
-    </>
+    </> 
   );
 }
 

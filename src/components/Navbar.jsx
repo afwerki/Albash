@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { Link,  animateScroll as scroll } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import logo from '../images/dcsLogo.png';
 
 
@@ -20,16 +20,23 @@ const Navbar = () => {
         </div>
             <div className='flex items-center cursor-pointer '>
                 <ul className='hidden md:flex'>
-                <li> <Link to="home" smooth={true}  duration={500}>Home</Link></li>
-                <li > <Link to="about" smooth={true} offset={-200} duration={500}>About Us</Link></li>
-                <li > <Link to="smartTools" smooth={true} offset={-50} duration={500}>Smart Tools</Link></li>
-                <li > <Link to="smartTools" smooth={true} offset={-100} duration={500}>Services</Link></li>
-                <li > <Link to="resources" smooth={true} offset={-50} duration={500}>Resoruces</Link></li>
+                <li> <Link to="/">Home</Link></li>
+                {/* smooth={true}  duration={500} */}
+                <li > <Link to="about">About Us</Link></li>
+                {/*  smooth={true} offset={-200} duration={500}*/}
+                <li > <Link to="Smart_Tools_detail" >Product</Link></li>
+                {/*  smooth={true} offset={-50} duration={500}*/}
+                <li > <Link to="Service_detail" >Services</Link></li>
+                {/* smooth={true} offset={-100} duration={500}*/}
+                <li > <Link to="Training">Training</Link></li>
+                <li > <Link to="Case_Study">Case Study</Link></li>
+                <li > <Link to="resources" >Resoruces</Link></li>
+                {/* smooth={true} offset={-50} duration={500}*/}
                 </ul>
             </div>
             <div className='hidden md:flex md:flex pr-4'>
-                <button className='border-none bg-transparent  text-black mr-4'>Login</button>
-                <button className='px-8 py-3 bg-primary-50 text-black'>Contact Us</button>
+                <button className='border-none bg-transparent  text-black mr-4'><Link to="Login">Login</Link></button>
+                <button className='px-8 py-3 bg-primary-50 text-black'><Link to="Dashboard">Contact Us</Link></button>
 
             </div>
             <div className='md:hidden' onClick={handleClick}>
@@ -46,6 +53,9 @@ const Navbar = () => {
                 <li className='border-b-2 border-zinc-300 w-full'> <Link onClick={handleClose} to="about" smooth={true} offset={-200} duration={500}>About Us</Link></li>
                 <li className='border-b-2 border-zinc-300 w-full'> <Link onClick={handleClose} to="smartTools" smooth={true} offset={-50} duration={500}>Smart Tools</Link></li>
                 <li className='border-b-2 border-zinc-300 w-full'> <Link onClick={handleClose} to="smartTools" smooth={true} offset={-100} duration={500}>Services</Link></li>
+                 
+                <li className='border-b-2 border-zinc-300 w-full'> <Link onClick={handleClose} to="Training" smooth={true} offset={-100} duration={500}>Training</Link></li>
+                <li className='border-b-2 border-zinc-300 w-full'> <Link onClick={handleClose} to="Case_Study" smooth={true} offset={-100} duration={500}>Case Study</Link></li>
                 <li className='border-b-2 border-zinc-300 w-full'> <Link onClick={handleClose} to="resources" smooth={true} offset={-50} duration={500}>Resources</Link></li>
 
           
@@ -60,3 +70,23 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -14,7 +14,8 @@ module.exports = {
           50:'#ffffff',
           'lightgreen':'#849F27',
           'naveyblack':'#171717',
-          'black':'#000000'
+          'black':'#000000',
+          'alotlightgreen':'#80e27e'
         }
 
       },

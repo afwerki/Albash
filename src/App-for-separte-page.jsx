@@ -1,3 +1,4 @@
+
 import About from "./components/About";
 import Resources from "./components/Resources";
 import Footer from "./components/Footer";
@@ -9,6 +10,7 @@ import Teams from "./components/Teams1";
 import Login from "./components/Login";
 import Pagniation from './components/Pagniation';
 import Contact from "./components/Contact";
+import home from "./components/Home";
 import Hero1 from "./components/Hero1";
 import MegaMenu from "./components/MegaMenu";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
@@ -18,10 +20,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-
      <Navbar/>
+     <Hero/>
      <Routes>
-      <Route path="/" element={<Hero/>}/>
+      <Route path="/" element={<home/>}/>
       <Route path="/SmartTools" element={ <SmartTools/>}/>
       <Route path="/Resources" element={<Resources/>}/>
       <Route path="/About" element={<About/>}/>
@@ -29,17 +31,24 @@ function App() {
       <Route path="/Contact" element={<Contact/>}/>
      </Routes>
       </Router>
-
-     {/* <Hero/>
-     <SmartTools/>
-     <Resources/>
-     <About/>
-     <Teams/>
-     <Contact/> */}
-
      <Footer/>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
