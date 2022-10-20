@@ -2,7 +2,8 @@ import About from "./components/About";
 import Resources from "./components/Resources";
 import Footer from "./components/Footer";
 // import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
+import Navbar from "./components/NavPages/Navbar_drop";
 import Pricing from "./components/Pricing";
 import Smart_Tools_detail from "./components/Smart_Tools_detail";
 import Teams from "./components/Teams";
@@ -10,10 +11,11 @@ import Login from "./components/Login";
 import Pagniation from './components/Pagniation';
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
-import MegaMenu from "./components/MegaMenu";
+// import MegaMenu from "./components/MegaMenu";
 import Training from "./components/Training";
 import CaseStudy from "./components/Case_Study";
 import Service_detail from "./components/Service_detail";
+import Contact1 from "./components/Contact1";
 import Dashboard from './components/Dashboard'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import {
@@ -45,6 +47,7 @@ function App() {
       <Route path="/About" element={<About/>}/>
       <Route path="/Teams" element={ <Teams/>}/>
       <Route path="/Dashboard" element={<Dashboard/>}/>
+      <Route path="/Contact1" element={<Contact1/>}/>
      </Routes>
       </Router>
      

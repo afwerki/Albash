@@ -15,8 +15,12 @@ import supportImg from "../images/dcs_template.png";
 // support.jpeg
 import ReadMoreReact from "read-more-react";
 import Smart_Tools_detail from "./Smart_Tools_detail";
-import bgimg from "../images/cyber-bg.png";
+import bgimg from "../images/support.jpeg";
+import demandAndcapacity from "../images/arrow.png";
+import fileAway from "../images/fileAway.jpg";
+import SmartSearch from "../images/SmartSearch.png";
 import './Herostyle.css'
+import { Link } from "react-router-dom";
 // import {useNavigate } from "react-router-dom";
 
 const SmartTools = () => {
@@ -28,7 +32,7 @@ const SmartTools = () => {
     <div className="w-full h-[700px] bg-gray-900/90 absolute">
       <img
         className="w-full h-full object-cover mix-blend-overlay"
-        src={supportImg}
+        src={bgimg}
         alt="/"
       />
     </div>
@@ -51,8 +55,9 @@ const SmartTools = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-4 pt-12 sm:pt-20 text-black">
         <div className="bg-white rounded-xl shadow-2xl">
           <div className="p-8">
-            <FolderAddIcon className="w-16 p-4 bg-primary-lightgreen text-white rounded-lg mt-[-4rem]" />
+            {/* <FolderAddIcon className="w-16 p-4 bg-primary-lightgreen text-white rounded-lg mt-[-4rem]" /> */}
             <h3 className=" text-2xl my-6 ">File Away</h3>
+            <img src={fileAway} alt="" />
             <p className="text-gray-600 text-base ">
               Did you know that an average GP would spend nearly five hours
               per week filing documents? Would you like to change the
@@ -61,17 +66,7 @@ const SmartTools = () => {
               <br />
               <ul className="list-disc">
                 <li class="flex items-center">
-                  <svg
-                    class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="11" />
-                    <path
-                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                      fill="none"
-                    />
-                  </svg>
+                  
                   <p class="ml-4">
                     DCS will provide training and support tools to minimise
                     GP time spent on filing documents
@@ -130,27 +125,27 @@ const SmartTools = () => {
                   </p>
                 </li>
                 <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
               </ul>
             </p>
+            <br />
+          <br />
           </div>
+          
           <div className="bg-slate-100 pl-8 py-4">
-            <p className="flex items-center text-primary-lightgreen">
+            <Link to="Smart_Tools_detail" className="flex items-center text-primary-lightgreen">
               Read more <ArrowSmRightIcon className="w-5 ml-2" />
-            </p>
+            </Link>
+            
           </div>
         </div>
         <div className="bg-white rounded-xl shadow-2xl">
           <div className="p-8">
-            <DatabaseIcon className="w-20 p-4  bg-primary-lightgreen text-white rounded-lg mt-[-4rem]" />
+            {/* <DatabaseIcon className="w-20 p-4  bg-primary-lightgreen text-white rounded-lg mt-[-4rem]" /> */}
             <h3 className=" text-2xl my-6 ">
               <var>
                 SMART SEARCH<sup>FM</sup>
               </var>
+            <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={SmartSearch} alt="" />
             </h3>
 
             <p className="text-gray-600 text-base">
@@ -164,18 +159,9 @@ const SmartTools = () => {
               <br />
               <ul className="list-disc">
                 <li class="flex items-center">
-                  <svg
-                    class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="11" />
-                    <path
-                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                      fill="none"
-                    />
-                  </svg>
+                 
                   <p class="ml-4">
+                   
                     Proactively identify patients with chronic diseases who
                     are being missed from regular reviews
                   </p>
@@ -248,16 +234,18 @@ const SmartTools = () => {
             </p>
           </div>
           <div className="bg-slate-100 pl-8 py-4">
-            <p className="flex items-center text-primary-lightgreen">
+            <Link to="Smart_Tools_detail" className="flex items-center text-primary-lightgreen">
               Read more <ArrowSmRightIcon className="w-5 ml-2" />
-            </p>
+            </Link>
+            
           </div>
         </div>
         <div className="bg-white rounded-xl shadow-2xl">
           <div className="p-8">
-            <ServerIcon className="w-20 p-4 bg-primary-lightgreen text-white rounded-lg mt-[-4rem]" />
+            {/* <ServerIcon className="w-20 p-4 bg-primary-lightgreen text-white rounded-lg mt-[-4rem]" /> */}
             <h3 className=" text-2xl my-6 ">DEMAND & CAPACIY MODELLING</h3>
             <p className="text-gray-600 text-base">
+            <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={demandAndcapacity} alt="" />
               Do you often feel that you offer enough appointments, but
               patients still feel discontent? Do you feel your workplace
               needs significant change to improve patient access? DCS could
@@ -339,9 +327,10 @@ const SmartTools = () => {
             </p>
           </div>
           <div className="bg-slate-100 pl-8 py-4">
-            <p className="flex items-center text-primary-lightgreen">
+            <Link to="Smart_Tools_detail" className="flex items-center text-primary-lightgreen">
               Read more <ArrowSmRightIcon className="w-5 ml-2" />
-            </p>
+            </Link>
+            
           </div>
         </div>
       </div>

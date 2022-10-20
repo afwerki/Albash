@@ -1,38 +1,26 @@
 import React from 'react'
+import Hero from './NavPages/Hero1'
 
 const Login = () => {
   return (
     <div id='Login'>
-      <br />
-      <br />
-      <br />
-       <div class="w-full max-w-xs">
-  <form class="bg-white self-center shadow-md rounded px-8 pt-6 pb-8 mb-4">
-    <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-        Username
-      </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"></input>
-    </div>
-    <div class="mb-6">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-        Password
-      </label>
-      <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************"></input>
-      <p class="text-red-500 text-xs italic">Please choose a password.</p>
-    </div>
-    <div class="flex items-center justify-between">
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-        Sign In
-      </button>
-      <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
-        Forgot Password?
-      </a>
-    </div>
-  </form>
-  <p class="text-center text-gray-500 text-xs">
-    &copy;2020 Acme Corp. All rights reserved.
-  </p>
+      <Hero/>
+      <div class="mx-auto my-36 flex h-[300px] w-[350px] flex-col border-2 bg-white text-black shadow-xl">
+  <div class="mx-8 mt-7 mb-1 flex flex-row justify-start space-x-2">
+    <div class="h-7 w-3 bg-[#0DE6AC]"></div>
+    <div class="w-3 text-center font-sans text-xl font-bold"><h1>Login</h1></div>
+  </div>
+  <div class="flex flex-col items-center">
+    <input class="my-2 w-72 border p-2" type="email" placeholder="Username" />
+    <input class="my-2 w-72 border p-2" type="password" placeholder="Password" />
+  </div>
+  <div class="my-2 flex justify-center">
+    <button class="w-72 border bg-[#0DE6AC] p-2 font-sans">Login</button>
+  </div>
+  <div class="mx-7 my-3 flex justify-between text-sm font-semibold">
+    <div><h1>Forget Password</h1></div>
+    <div><h1 class="underline underline-offset-2">Signup</h1></div>
+  </div>
 </div>
     </div>
   )

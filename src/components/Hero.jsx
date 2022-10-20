@@ -1,30 +1,49 @@
 import React from "react";
 
 const Hero = () => {
-    return (
-        <div className="dark:bg-gray-900">
-            <div className="container mx-auto py-9 md:py-12 lg:py-24">
-                <div className="relative mx-4">
-                    <img src="https://i.ibb.co/q5k5j57/bench-accounting-nvzv-OPQW0gc-unsplash-1-1.png" alt="A work table with house plants" className="w-full h-full hidden lg:block" />
-                    <img src="https://i.ibb.co/94jQFsV/bench-accounting-nvzv-OPQW0gc-unsplash-1-1.png" alt="A work table with house plants" className="hidden sm:block lg:hidden w-full h-full" />
-                    <img src="https://i.ibb.co/cJz8LZ2/bench-accounting-nvzv-OPQW0gc-unsplash-1-1.png" alt="A work table with house plants" className="sm:hidden w-full h-full" />
+  return (
+    <div className="dark:bg-gray-500">
+      <div className="container mx-auto py-9 md:py-12 lg:py-24">
+        <div className="relative mx-4">
+          <img
+            src="https://i.ibb.co/q5k5j57/bench-accounting-nvzv-OPQW0gc-unsplash-1-1.png"
+            alt="A work table with house plants"
+            className="w-full h-full hidden lg:block"
+          />
+          <img
+            src="https://i.ibb.co/94jQFsV/bench-accounting-nvzv-OPQW0gc-unsplash-1-1.png"
+            alt="A work table with house plants"
+            className="hidden sm:block lg:hidden w-full h-full"
+          />
+          <img
+            src="https://i.ibb.co/cJz8LZ2/bench-accounting-nvzv-OPQW0gc-unsplash-1-1.png"
+            alt="A work table with house plants"
+            className="sm:hidden w-full h-full"
+          />
 
-                    <div className="absolute z-10 top-0 left-0 mx-4 sm:mx-0 mt-36 sm:mt-0 sm:py-20 md:py-28 lg:py-20 xl:py-28 sm:pl-14 flex flex-col sm:justify-start items-start">
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-800 sm:w-8/12"> Clean Data Safe Patient</h1>
-                        <p className="text-base leading-normal text-gray-800 mt-4 sm:mt-5 sm:w-5/12">Our Consultancy, Smart Tools and training
-improve patient care and optimise processes whilst reducing workload and costs.</p>
-                        <button className="hidden sm:flex bg-gray-800 py-4 px-8 text-base font-medium text-white mt-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">Explore</button>
-                    </div>
-                    <button className="absolute bottom-0 sm:hidden dark:bg-white dark:text-gray-800 bg-gray-800 py-4 text-base font-medium text-white mt-8 flex justify-center items-center w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">Explore</button>
-                </div>
-            </div>
+          <div className="absolute z-10 top-0 left-0 mx-4 sm:mx-0 mt-36 sm:mt-0 sm:py-20 md:py-28 lg:py-20 xl:py-28 sm:pl-14 flex flex-col sm:justify-start items-start">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-800 sm:w-8/12">
+              {" "}
+              Clean Data Safe Patient
+            </h1>
+            <p className="text-base leading-normal text-gray-800 mt-4 sm:mt-5 sm:w-5/12">
+              Our Consultancy, Smart Tools and training improve patient care and
+              optimise processes whilst reducing workload and costs.
+            </p>
+            <button className="hidden sm:flex bg-gray-800 py-4 px-8 text-base font-medium text-white mt-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+              Explore
+            </button>
+          </div>
+          <button className="absolute bottom-0 sm:hidden dark:bg-white dark:text-gray-800 bg-gray-800 py-4 text-base font-medium text-white mt-8 flex justify-center items-center w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+            Explore
+          </button>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Hero;
-
-
 
 // import React from "react";
 // import {
@@ -51,13 +70,13 @@ export default Hero;
 //           </h1>
 //           <h1 className="text-2xl"> DATA CARE SOLUTIONS </h1>
 //           <button className="py-3 px-6 sm:w-[60%] my-4 bg-black text-primary-lightgreen">Learn More</button>
-//         </div> 
+//         </div>
 //         <div className="">
 //           <img className="w-full" src={bgimg} alt="/" />
 //         </div>
 //         <div
 //           className="absolute flex flex-col py-8 md:min-w-[760px] bottom-[5%]
-//             mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200 border border-slate-300 
+//             mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200 border border-slate-300
 //             rounded-xl text-center shadow-xl"
 //         >
 //           <h2 className="py-3 text-4xl md:text-3xl">

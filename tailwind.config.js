@@ -15,8 +15,15 @@ module.exports = {
           'lightgreen':'#849F27',
           'naveyblack':'#171717',
           'black':'#000000',
-          'alotlightgreen':'#80e27e'
-        }
+          'alotlightgreen':'#80e27e',
+          'p-dark':'#29434e',
+          'olivedrab':'#6B8E23'
+        },
+        fontSize: {
+          'p_1': ' 1.0625rem',
+          'title_size':'2.125rem'
+        },
+       
 
       },
     },
