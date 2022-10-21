@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-import { PhoneIcon, ArrowSmRightIcon } from "@heroicons/react/outline";
-import {
-  ChipIcon,
-  SupportIcon,
-  CloudUploadIcon,
-  FolderAddIcon,
-  DatabaseIcon,
-  PaperAirplaneIcon,
-  ServerIcon,
-} from "@heroicons/react/solid";
+// import { PhoneIcon, ArrowSmRightIcon } from "@heroicons/react/outline";
+// import {
+//   ChipIcon,
+//   SupportIcon,
+//   CloudUploadIcon,
+//   FolderAddIcon,
+//   DatabaseIcon,
+//   PaperAirplaneIcon,
+//   ServerIcon,
+// } from "@heroicons/react/solid";
 
 // import supportImg from "../images/dcs_template.png";
 // support.jpeg
 // import ReadMoreReact from "read-more-react";
 // import bgimg from "../images/cyber-bg.png";
-
+import React from "react";
 const SmartSearch = () => {
   return (
     <div>
