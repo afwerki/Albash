@@ -12,11 +12,13 @@ import './Herostyle.css'
 // import Hero from "./Hero3";
 import Hero from "./HeroSlieceTwo";
 import About from "./About";
-import SmartTools from "./SmartTools";
+import SmartTools from "./SmartTools_updated";
 import Article from "./articles/Article";
 import Contact1 from "./Contact1";
-import VideoBack from "./VideoBack";
 import Teams_cardFlip from "./Teams_cardFlip";
+import Small_description_section from "./Small_description_section";
+import Talk_to_us from "./Talk_to_us";
+import'./Home.css'
 // import SlowLoading from "./SlowLoading";
 
 // import TeamsFlip from "./TeamsFlip";
@@ -24,11 +26,24 @@ import Teams_cardFlip from "./Teams_cardFlip";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home-page">
    
       <Hero/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
    
-      <SmartTools/>
+    
+      <Small_description_section/>
+      {/* <SmartTools/> */}
+      {/* <Talk_to_us/> */}
       <Article/>
       <Teams_cardFlip/>
    

@@ -1,0 +1,44 @@
+.talkTo_us{
+   position: absolute;
+  width: 1440px;
+  height: 220px;
+  left: 138px;
+  top: 230vh;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align:center;
+  color: #374234;
+  background: #94E8C1;
+}
+.howCanIHelpYou{
+left: 138px;
+
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+color: #222F1F;
+}
+.textShap{
+  margin-left: 5%;
+}
+
+.other_section{
+  display: flex;
+  margin-top: 5rem;
+  margin-top: -82px;
+   gap: 40px 40px ;
+   position: absolute;
+    width: 100%;
+    height: 342px;
+    left: 0;
+    top: 450px;
+    background-color: #F2FCF8;
+
+}
+.disktop{
+  width: 425px;
+  height: 307px;
+  left: 77px;
+}

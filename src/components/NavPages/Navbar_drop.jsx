@@ -1,101 +1,160 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar_drop.css";
+import { Link } from "react-router-dom";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import logo from "../styles/dcsLogo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
+import {
+  faCoffee,
+  faDatabase,
+  faBrain,
+  faCheckSquare,
+  faRectangleAd
+} from "@fortawesome/free-solid-svg-icons";
 const Navbar_drop = () => {
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
   return (
     <div className="navbar">
       <div class="topnav" id="myTopnav">
-        <a href="logo">DCS</a>
-        <a href="#home" class="flex items-center cursor-pointer">
-          Home
-        </a>
-        {/* <a href="#contact">Contact</a> */}
-        <div class="dropdown">
-          <button class="dropbtn">
-          About Us
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Company history</a>
-            <a href="#">Team bio</a>
-            
+        <div class="flex flex-shrink-0 items-center">
+          <img class="block h-10 w-auto" src={logo} alt="DATA CARE SOLUTIONS" />
+          {/* <h1 className='text-1xl font-bold mr-4 sm:text-4xl'>Data Care Solutions</h1> */}
+{/* 
+          <a href="#home">Home</a> */}
+          {/* <a href="#contact">Contact</a> */}
+          <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+              <a href="#">Company history</a>
+              <a href="#">Team bio</a>
+            </div>
           </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">
-          Product
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Smart Searches</a>
-            <a href="#">Smart Flow</a>
-            <a href="#">Population health management</a>
+          {/* About Us */}
+
+          <div class="dropdown">
+            <button class="dropbtn">
+              Solutions
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">
+                <FontAwesomeIcon className="dropdownIcons" icon={faBrain} />
+                Smart Searches
+              </a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faRectangleAd}/>
+                Smart Flow
+              </a>
+              <a href="#">
+                <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Population health management
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">
-          Services
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#"> Office Support Function</a>
-            <a href="#">Asthma and COPD management</a>
-            <a href="#">Diabetes management</a>
-            <a href="#">DocFiler</a>
-            <a href="#">Consultancy</a>
+          {/* Solutions */}
+          <div class="dropdown">
+            <button class="dropbtn">
+              Case Studies
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Office Support Function</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Asthma and COPD management
+              </a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Diabetes management</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                DocFiler</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Consultancy</a>
+            </div>
           </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">
-          Training
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Medical Terminology</a>
-            <a href="#">Medical Coding</a>
-            <a href="#">Interpreting blood results</a>
-            <a href="#">File Away</a>
-            <a href="#">Safe Prescribing</a>
-            <a href="#">Workflow optimisation</a>
+          {/* Case Studies */}
+          <div class="dropdown">
+            <button class="dropbtn">
+              Resources
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Medical Terminology</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Medical Coding</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Interpreting blood results</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                File Away</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Safe Prescribing</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Workflow optimisation</a>
+            </div>
           </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">
-          Case Study
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Brent CCG</a>
-            <a href="#">Health Direct Federation</a>
-            <a href="#">Medicspot</a>
-            <a href="#">The Health Foundation</a>
-            <a href="#">The British Heart Foundation</a>
+          {/* Resources */}
+          
+          {/* <div class="dropdown">
+            <button class="dropbtn">
+              Case Study
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Brent CCG</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Health Direct Federation</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Medicspot</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                The Health Foundation</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                The British Heart Foundation</a>
+            </div>
           </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">
-        Resoruces
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Free (Cheat sheets)</a>
-            <a href="#">CPCS Cheat sheet</a>
-            <a href="#">Safe prescribing sheet</a>
-          </div>
-        </div>
-        <a href="#home" class="flex items-center cursor-pointer">
-          Contact
-        </a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Resoruces
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />
+                Free (Cheat sheets)</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />CPCS Cheat sheet</a>
+              <a href="#">
+              <FontAwesomeIcon className="dropdownIcons" icon={faDatabase} />Safe prescribing sheet</a>
+            </div>
+          </div> */}
+          <a href="#home" class="flex items-center cursor-pointer">
+            Contact Us
+          </a>
+          {/* <div className='md:hidden' onClick={handleClick}>
+                {!nav?<MenuIcon className='w-5'/>:<XIcon className='w-5'/>}
+
         
+            </div> */}
+        </div>
       </div>
+      
     </div>
   );
 };

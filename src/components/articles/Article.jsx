@@ -4,7 +4,65 @@ import { Link } from "react-router-dom";
 
 const Article = () => {
   return (
-    <div className="container my-24 px-6 mx-auto">
+    <div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /> <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+    <div className="container my-120 px-6 mx-auto">
       <section className="mb-32 text-gray-800 text-center">
         <h2 className="text-3xl font-bold mb-12 pb-4 text-center">
           Articles
@@ -139,6 +197,8 @@ const Article = () => {
           </div>
         </div>
       </section>
+    </div>
+
     </div>
   );
 };

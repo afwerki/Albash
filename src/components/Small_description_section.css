@@ -1,0 +1,159 @@
+.decriptions{
+    position:absolute;
+    top:152vh;
+    padding: 10px;
+    margin-left: 3%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    gap: 10px;
+    gap: 10px 20px; 
+}
+.discription_title_two{
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+
+color: #000000;
+
+}
+.discription_title_one{
+    
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    
+    color: #222F1F;
+}
+.sm_containers{
+    margin-left: 5%;
+    background-color: #F2FCF8;
+    border-radius: 20px;
+
+}
+.text_shaper{
+    margin-left: 5%;
+}
+
+   
+  
+  @media (min-width:320px)  {
+     /* smartphones, iPhone, portrait 480x320 phones */ 
+     
+     .service_ad{
+        margin-top: 143vh;
+        font-size: 11px;
+       }
+     .small_logos {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40vh;
+      gap: 10px 10px;
+      position: absolute;
+      width: 100%;
+      height: 342px;
+      left: 14px;
+      top: 28vh;
+      background-color: #F2FCF8;
+  }
+     .imagesandtext{
+      display: inline-block;
+      margin-left: 5%;
+       width:100%;
+     height:auto;
+     }
+    }
+  @media (min-width:481px)  {
+     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+     
+     
+    
+     .small_logos {
+      display: flex;
+      flex-direction: column;
+      margin-top: -44vh;
+      gap: 10px 10px;
+      position: absolute;
+      width: 100%;
+      height: 342px;
+      left: 14px;
+      top: 117vh;
+      background-color: #F2FCF8;
+      width: 100%;
+  }
+     .imagesandtext{
+      display: inline-block;
+      margin-left: 5%;
+       width:100%;
+     height:auto;
+     }
+    }
+  @media (min-width:641px)  {
+    
+     .small_logos {
+      display: flex;
+      flex-direction: column;
+      margin-top: -44vh;
+      gap: 10px 10px;
+      position: absolute;
+      width: 100%;
+      height: 342px;
+      left: 14px;
+      top: 117vh;
+      background-color: #F2FCF8;
+      width: 100%;
+  }
+     .imagesandtext{
+      display: inline-block;
+      margin-left: 5%;
+       width:100%;
+     height:auto;
+     }
+  }
+  @media (min-width:961px)  {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    
+     .small_logos {
+      display: flex;
+      flex-direction: row;
+      margin-top: -44vh;
+      gap: 10px 10px;
+      position: absolute;
+      width: 100%;
+      height: 342px;
+      left: 14px;
+      top: 117vh;
+      background-color: #F2FCF8;
+      width: 100%;
+  }
+     .imagesandtext{
+      display: inline-block;
+      margin-left: 5%;
+       width:100%;
+     height:auto;
+     }
+      }
+  @media (min-width:1025px) {
+     /* big landscape tablets, laptops, and desktops */
+     
+     }
+  @media (min-width:1281px) {
+     /* hi-res laptops and desktops */ 
+     
+    }
+  /* On screens that are 992px wide or less, the background color is blue */
+ @media screen and (max-width: 992px) {
+    
+  
+   /* On screens that are 600px wide or less, the background color is olive */
+ @media screen and (max-width: 600px) {
+  
+}
+ 
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+  }
+   }

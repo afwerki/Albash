@@ -12,7 +12,6 @@ const Navbar = () => {
     const handleClose = () =>setNav(!nav)
   return (
     <div className='sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent'>
-        {/* w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg font-sans-serif */}
         <div className='px-2 flex justify-between items-center w-full h-full'>
         <div class="flex flex-shrink-0 items-center">
           <img class="block h-8 w-auto" src={logo} alt="DATA CARE SOLUTIONS"/>
@@ -20,7 +19,9 @@ const Navbar = () => {
         </div>
             <div className='flex items-center cursor-pointer '>
                 <ul className='hidden md:flex'>
-                <li> <Link to="/">Home</Link></li>
+                <li> <Link to="/">Home</Link>
+                
+                </li>
                 {/* smooth={true}  duration={500} */}
                 <li > <Link to="about">About Us</Link></li>
                 {/*  smooth={true} offset={-200} duration={500}*/}
@@ -34,7 +35,7 @@ const Navbar = () => {
                 {/* smooth={true} offset={-50} duration={500}*/}
                 </ul>
             </div>
-            <div className='hidden md:flex md:flex pr-4'>
+            <div className='hidden md:flex pr-4'>
                 <button className='border-none bg-transparent  text-black mr-4'><Link to="Login">Login</Link></button>
                 <button className='px-8 py-3 bg-primary-50 text-black'><Link to="Contact1">Contact Us</Link></button>
 

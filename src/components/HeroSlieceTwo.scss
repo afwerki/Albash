@@ -1,0 +1,225 @@
+.moto{
+  position: absolute;
+  margin-left: 15%;
+  width: 100%;
+  height: 741px;
+  left:0;
+  top: 207px;
+  background-color: #FBFEFD;
+}
+.link_text{
+  color: black;
+}
+
+.hero_main{
+  width: 100%;
+}
+// .imagesandtext{
+//  display: inline-block;
+//  margin-left: 5%;
+//   width:170px;
+// height:170px;
+// margin-right:15px;
+// }
+
+.imgBrent{
+  float: left;
+  margin: 5px;
+}
+
+
+
+.hero_image{
+  position: absolute;
+  width: 720px;
+  margin-left: 10%;
+  height: 741px;
+  left: 720px;
+  top:100px;
+  z-index: 1;
+}
+
+// @media (max-width: 1053px) {
+//   .main {
+//     flex-direction: column;
+//     width: 100%;
+//   }
+//   .team-text{
+//     width: 100%;
+//     padding: 15px;
+//   }
+// }
+// h1 {
+//   font-size: 2.2em;
+// }
+@media (min-width:320px)  {
+   /* smartphones, iPhone, portrait 480x320 phones */ 
+   .hero_main{
+    display: flex;
+    flex-direction: column;
+   }
+   .hero_img{
+    margin-left: 36px;
+    width: 253px;
+    height: 241px;
+    margin-top: 11px;
+    z-index: 1;
+   }
+   .moto{
+    display: flex;
+    flex-direction: column;
+    margin-top: -121px;
+    width: 100%;
+    font-size: 16px;
+   }
+   .imagesandtext{
+    display: inline-block;
+    margin-left: 5%;
+     width:100%;
+   height:auto;
+   }
+  }
+@media (min-width:481px)  {
+   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+   .moto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+   }
+   .hero_img{
+    margin-left: 270px;
+    width: 275px;
+    height: 264px;
+    margin-top: -156px;
+   }
+  }
+@media (min-width:641px)  {
+   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+   .hero_main{
+    width: 100%;
+   }
+   .moto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+   }
+   .hero_img{
+    margin-left: 223px;
+    width: 204px;
+    height: 225px;
+    margin-top: -156px;
+   }
+}
+@media (min-width:961px)  {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .hero_main{
+    width: 100%;
+   }
+   .moto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+   }
+   .hero_img{
+    width: 193px;
+    height: 265px;
+    margin-left: 222px;
+    margin-top: -199px;
+   }
+    }
+@media (min-width:1025px) {
+   /* big landscape tablets, laptops, and desktops */
+   .hero_main{
+    width: 100%;
+   }
+   .moto{
+    display: flex;
+    margin-top: -58px;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+   }
+   
+   .hero_img{
+    width: 129px;
+    height: 123px;
+    margin-left: 228px;
+    margin-top: -97px;
+   }
+   }
+@media (min-width:1281px) {
+   /* hi-res laptops and desktops */ 
+   .hero_main{
+    width: 100%;
+   }
+   .moto{
+    display: flex;
+    margin-top: -58px;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+   }
+   .hero_img{
+    width: 500px;
+    height: 500px;
+    margin-left: 351px;
+    margin-top: -257px;
+   }
+  }
+/* On screens that are 992px wide or less, the background color is blue */
+// @media screen and (max-width: 992px) {
+//   .moto{
+//     position: absolute;
+//     margin-left: 5%;
+//     width: 100%;
+//     height: 500px;
+//     left:0;
+//     top: 100px;
+//     background-color: #FBFEFD;
+//   }
+
+//   .hero_image{
+//     position: absolute;
+//     width: 398px;
+//     margin-left: -42%;
+//     height: 739px;
+//     left: 720px;
+//     top: 118px;
+//     z-index: 1;
+//   }
+
+// /* On screens that are 600px wide or less, the background color is olive */
+// @media screen and (max-width: 600px) {
+//   .moto{
+//     position: absolute;
+//     margin-left: 5%;
+//     width: 100%;
+//     height: 500px;
+//     left:0;
+//     top: 100px;
+//     background-color: #FBFEFD;
+//   }
+//   .hero_image{
+//     position: absolute;
+//     width: 398px;
+//     margin-left: -42%;
+//     height: 739px;
+//     left: 720px;
+//     top: 118px;
+//     z-index: 1;
+//   }
+// }
+// }
+// @media only screen and (min-width: 320px) and (max-width: 576px) {
+//   .container {
+//     width: 100%;
+//     padding-left: 23px;
+//     flex-direction: column-reverse;
+//   }
+//   .boxes {
+//     width: 100%;
+//   }
+// }

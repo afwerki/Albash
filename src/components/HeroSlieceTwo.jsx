@@ -1,26 +1,83 @@
-import React from 'react'
-import './HeroSlieceTwo.css'
+import React from "react";
+import "./HeroSlieceTwo.scss";
+import AI_healthCare from "../images/AI_healthCare.jpeg";
+import brent from '../images/brent.png'
+import rounded_hero from '../images/hero_rounded.png'
+import img2 from '../images/image_2.png'
+import {ArrowSmRightIcon} from '@heroicons/react/outline'
+import british_heart from '../images/biritsh_heart.png'
+
+import { Link } from "react-router-dom";
 
 const HeroSlieceTwo = () => {
   return (
-    <div className='hero_section'>
-      <div className="container">
-        <div className="hero_image">
-          <h1 className='moto_title'>Clean Data Safe Patient </h1>
-          <img src="" alt="" />
+    <div className="hero_main">
+        <div className="moto">
+        
+          <h1> Smarter working with</h1>
+          <h1> smart tools</h1><br />
+          <Link to="Smart_Tools_detail" className="flex items-center text-primary-lightgreen">
+               <ArrowSmRightIcon className="w-10  ml-7" /><p className="link_text">Explore smart tools</p> 
+            </Link>
+
+
+            <Link to="Smart_Tools_detail" className="flex items-center text-primary-lightgreen">
+               <ArrowSmRightIcon className="w-10  ml-7" /><p className="link_text">Explore consultancy</p> 
+            </Link>
+            <Link to="Smart_Tools_detail" className="flex items-center text-primary-lightgreen">
+               <ArrowSmRightIcon className="w-10  ml-7" /><p className="link_text">Explore training</p> 
+            </Link>
+            <img className="hero_img" src={rounded_hero} alt="" />
         </div>
-      </div>
-      <div className="subProducts">
-        <div className="container">
-          <div className="smartsearch">
-            <h1 className='title'>Smart tools</h1>
-            <img src="" alt="" />
+        {/* <div className="hero_image">
+          <img src={rounded_hero} alt="" />
+          </div> */}
+
+        <div className="small_logos">
+          <div className="imagesandtext">
+            <img className="imgBrent" src={brent}alt="" />
+            <p className="companies_text">Delivering training in  
+              best coding practices</p>
+             <Link to="Smart_Tools_detail" className="flex items-center text-primary-lightgreen">
+               <ArrowSmRightIcon className="w-10  ml-7" /><p className="link_text">Read more</p> 
+            </Link>
+          </div>
+
+
+          <div>
+            <img src={img2}alt="" />
+            <p className="companies_text">Improving efficiency in
+                 working practices of medicspot</p>
+             <Link to="Smart_Tools_detail" className="flex items-center text-primary-lightgreen">
+               <ArrowSmRightIcon className="w-10  ml-7" /><p className="link_text">Read more</p> 
+            </Link>
+          </div>
+          <div>
+            <img src={british_heart}alt="" />
+            <p className="companies_text">Improving efficiency in
+                                  working practices of medicspot</p>
+             <Link to="Smart_Tools_detail" className="flex items-center text-primary-lightgreen">
+               <ArrowSmRightIcon className="w-10  ml-7" /><p className="link_text">Read more</p> 
+            </Link>
+          </div>
+          <div>
+            <img src={british_heart}alt="" />
+            <p className="companies_text">Improving efficiency in
+                                  working practices of medicspot</p>
+             <Link to="Smart_Tools_detail" className="flex items-center text-primary-lightgreen">
+               <ArrowSmRightIcon className="w-10  ml-7" /><p className="link_text">Read more</p> 
+            </Link>
           </div>
         </div>
+        <div className="service_ad">
+          <h1 className="">Our Services to cater for the needs of the practice</h1>
+          <p className="practis_ad">
+          We have taylor made solutions to deal with practice needs on a day to day basis which can help enhance practice 
+          performances while at the same time improve care given to the patients.
+          </p>
+          </div>
       </div>
-      
-    </div>
-  )
-}
+  );
+};
 
-export default HeroSlieceTwo
+export default HeroSlieceTwo;
