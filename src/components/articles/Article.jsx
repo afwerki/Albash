@@ -7,44 +7,6 @@ const Article = () => {
     <div>
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
       <br /> <br />
       <br />
       <br /><br />

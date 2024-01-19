@@ -29,21 +29,6 @@ const Home = () => {
     <div className="home-page">
    
       <Hero/>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-   
-    
-      <Small_description_section/>
-      {/* <SmartTools/> */}
-      {/* <Talk_to_us/> */}
       <Article/>
       <Teams_cardFlip/>
    
