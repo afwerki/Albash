@@ -9,147 +9,36 @@ import me from "../images/me.jpg";
 
 const Teams_cardFlip = () => {
   return (
-    <div className="teams">
-      <div className="team-text">
-        <h1>Our Team</h1>
-        <p>
+    <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+            <div class="flex flex-col lg:flex-row justify-between gap-8">
+                <div class="w-full lg:w-5/12 flex flex-col justify-center">
+                    <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4">About Us</h1>
+                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-white">
+                    Alabsh Ethiopia is a recently established charitable organization committed to transforming the lives of underprivileged children in Ethiopia by providing them with the essential learning materials they need to thrive academically. Our mission is rooted in the belief that 
+                    education is a powerful tool for breaking the cycle of poverty, 
+                    and every child deserves the opportunity to learn and grow.</p>
+                    <br></br>
+                    <h3 className="text-3xl">Building Futures through Education</h3>
 
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          accusamus molestias reprehenderit facilis maiores? Eum ipsam, iste
-          maiores placeat dicta reprehenderit porro asperiores maxime. Sequi
-          tenetur hic minus est aperiam. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Accusantium accusamus vel blanditiis minus. Totam
-          minus odio animi necessitatibus provident! Exercitationem suscipit et
-          ducimus laudantium quia. Nostrum, necessitatibus nemo vero ipsum
-          sapiente sed, qui quam, vitae optio ducimus minus quod! Laboriosam
-          reprehenderit, accusantium itaque totam nisi deserunt labore molestiae
-          iure quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Asperiores quo rerum accusantium culpa excepturi, iusto numquam vero
-          sit vel voluptatum! Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Ab quae numquam recusandae, minima modi nesciunt. Ad
-          molestias ullam impedit, iste at quos repellendus ipsa quas. Sapiente
-          fugiat adipisci assumenda rerum! Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Itaque ex qui deserunt possimus.
-          Accusamus quis atque possimus ex fugit tempora, perferendis
-          necessitatibus corrupti adipisci, fugiat ab architecto vel voluptates
-          reprehenderit numquam. Qui, aperiam voluptate maxime nostrum provident
-          molestiae illum laboriosam?
-          th
-        </p>
-      </div>
-      <div className="team-bio">
-        <div class="flip">
-          <div class="front" id="jay">
-            <h1 class="text-shadow"> </h1>
-            <p className="role">role</p>
-          </div>
-          <div class="back">
-            <h2>Dr. Jay </h2>
-            <p>
-              Good tools make application development quicker and easier to
-              maintain than if you did everything by hand..
-            </p>
-            <button>Read More</button>
-          </div>
+                       At Albash Ethiopia, we envision a future where every child in Ethiopia has access to quality education, 
+                       regardless of their socio-economic background. We believe that education is the key to unlocking a brighter 
+                       and more prosperous future for individuals, families, and communities. By focusing on providing learning materials, 
+                       we aim to address a critical barrier that many children face in pursuing their education.
+
+                </div>
+                
+                <div class="w-full lg:w-8/12">
+                    <img class="w-full h-full" src={me}alt="A group of People" />
+                </div>
+            </div>
+    
+            <div class="flex lg:flex-row flex-col justify-between gap-8 pt-12">
+                <div class="w-full lg:w-5/12 flex flex-col justify-center">
+                    <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4">Our Story</h1>
+                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from</p>
+                </div>
+            </div>
         </div>
-        <div class="flip">
-          <div class="front" id="sukin">
-            <h1 class="text-shadow">Name</h1>
-            <p>role</p>
-          </div>
-          <div class="back">
-            <h2>Angular</h2>
-            <p>
-              Good tools make application development quicker and easier to
-              maintain than if you did everything by hand..
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
-        <div class="flip">
-          <div class="front" id="darrell">
-            <h1 class="text-shadow">Name</h1>
-            <p>role</p>
-          </div>
-          <div class="back">
-            <h2>Angular</h2>
-            <p>
-              Good tools make application development quicker and easier to
-              maintain than if you did everything by hand..
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
-        <div class="flip">
-          <div class="front" id="first-flip">
-            <h1 class="text-shadow">Name</h1>
-            <p>role</p>
-          </div>
-          <div class="back">
-            <h2>Angular</h2>
-            <p>
-              Good tools make application development quicker and easier to
-              maintain than if you did everything by hand..
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
-        <div class="flip">
-          <div class="front" id="first-flip">
-            <h1 class="text-shadow">Name</h1>
-            <p>role</p>
-          </div>
-          <div class="back">
-            <h2>Angular</h2>
-            <p>
-              Good tools make application development quicker and easier to
-              maintain than if you did everything by hand..
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
-        <div class="flip">
-          <div class="front" id="first-flip">
-            <h1 class="text-shadow">Name</h1>
-            <p>role</p>
-          </div>
-          <div class="back">
-            <h2>Angular</h2>
-            <p>
-              Good tools make application development quicker and easier to
-              maintain than if you did everything by hand..
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
-        <div class="flip">
-          <div class="front" id="second-flip">
-            <h1 class="text-shadow">Name</h1>
-            <p>role</p>
-          </div>
-          <div class="back">
-            <h2>Angular</h2>
-            <p>
-              Good tools make application development quicker and easier to
-              maintain than if you did everything by hand..
-            </p>
-          </div>
-        </div>
-        <div class="flip">
-          <div class="front" id="thired-flip">
-            <h1 class="text-shadow">Name</h1>
-            <p>role</p>
-          </div>
-          <div class="back">
-            <h2>Angular</h2>
-            <p>
-              Good tools make application development quicker and easier to
-              maintain than if you did everything by hand..
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
   );
 };
 

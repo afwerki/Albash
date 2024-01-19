@@ -4,164 +4,88 @@ import { Link } from "react-router-dom";
 
 const Article = () => {
   return (
-    <div>
-      <br />
-      <br />
-      <br /> <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-      <br /><br />
-      <br />
-      <br />
-    <div className="container my-120 px-6 mx-auto">
-      <section className="mb-32 text-gray-800 text-center">
-        <h2 className="text-3xl font-bold mb-12 pb-4 text-center">
-          Articles
-        </h2>
-        <div className="grid lg:grid-cols-3 gap-6 xl:gap-x-12">
-          <div className="mb-6 lg:mb-0">
-            <div className="relative block bg-white rounded-lg shadow-lg">
-              <div className="flex">
-                <div
-                  class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                >
-                  <img
-                    src="https://media.istockphoto.com/photos/consultant-showing-data-analysis-concept-on-screen-for-business-picture-id507530880?k=20&m=507530880&s=612x612&w=0&h=nLDp7gSr29XVvGqGyoGx7hVRCBVnnQqMa4hLxjInSbo="
-                    class="w-full"
-                  />
-                  <a href="#!"></a>
+    <div className="flex justify-center items-center">
+            <div className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
+                <div className="flex flex-col items-center justify-center">
+                    <h1 className="text-4xl font-semibold leading-9 text-center text-gray-800">This Week Blogs</h1>
+                    <p className="text-base leading-normal text-center text-gray-600 mt-4 lg:w-1/2 md:w-10/12 w-11/12">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>
                 </div>
-              </div>
-
-              <div className="p-6">
-                <h5 className="font-bold text-lg mb-3">The benefit of AI in primary care</h5>
-                <p className="text-gray-500 mb-4">
-                  <small>
-                    Published <u>13.01.2022</u>
-                    <a href="" className="text-gray-900">
-                      Anna Maria Doe
-                    </a>
-                  </small>
-                </p>
-                <p className="mb-4 pb-2">
-                  Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                  placerat vulputate. Ut vulputate est non quam dignissim
-                  elementum. Donec a ullamcorper diam.
-                </p>
-                <Link
-                  href="#!"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                  className="inline-block px-6 py-2.5 bg-primary-lightgreen text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-black hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                >
-                  Read more
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-6 lg:mb-0">
-            <div className="relative block bg-white rounded-lg shadow-lg">
-              <div className="flex">
-                <div
-                  class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG5ldXJhbCUyMG5ldHdvcmt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                    class="w-full"
-                  />
-                  <a href="#!"></a>
+                <div className="lg:flex items-stretch md:mt-12 mt-8">
+                    <div className="lg:w-1/2">
+                        <div className="sm:flex items-center justify-between xl:gap-x-8 gap-x-6">
+                            <div className="sm:w-1/2 relative">
+                                <div>
+                                    <p className="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                                    <div className="absolute bottom-0 left-0 p-6">
+                                        <h2 className="text-xl font-semibold 5 text-white">First clouth support</h2>
+                                        <p className="text-base leading-4 text-white mt-2">To the people who needs our support</p>
+                                        <div className="flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <p className="pr-2 text-sm font-medium leading-none">Read More</p>
+                                            <svg className="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="https://i.ibb.co/DYxtCJq/img-1.png" className="w-full" alt="chair" />
+                            </div>
+                            <div className="sm:w-1/2 sm:mt-0 mt-4 relative">
+                                <div>
+                                    <p className="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                                    <div className="absolute bottom-0 left-0 p-6">
+                                        <h2 className="text-xl font-semibold 5 text-white">Second  clouth support</h2>
+                                        <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                        <div className="flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <p className="pr-2 text-sm font-medium leading-none">Read More</p>
+                                            <svg className="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="https://i.ibb.co/3C5HvxC/img-2.png" className="w-full" alt="wall design" />
+                            </div>
+                        </div>
+                        <div className="relative">
+                            <div>
+                                <p className="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                                <div className="absolute bottom-0 left-0 md:p-10 p-6">
+                                    <h2 className="text-xl font-semibold 5 text-white">Learning material support</h2>
+                                    <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                    <div className="flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                        <p className="pr-2 text-sm font-medium leading-none">Read More</p>
+                                        <svg className="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="https://i.ibb.co/Ms4qyXp/img-3.png" alt="sitting place" className="w-full mt-8 md:mt-6 hidden sm:block" />
+                            <img className="w-full mt-4 sm:hidden" src="https://i.ibb.co/6XYbN7f/Rectangle-29.png" alt="sitting place" />
+                        </div>
+                    </div>
+                    <div className="lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-4 lg:flex flex-col justify-between">
+                        <div className="relative">
+                            <div>
+                                <p className="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                                <div className="absolute bottom-0 left-0 md:p-10 p-6">
+                                    <h2 className="text-xl font-semibold 5 text-white">The future project</h2>
+                                    <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                    <div className="flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                        <p className="pr-2 text-sm font-medium leading-none">Read More</p>
+                                        <svg className="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="https://i.ibb.co/6Wfjf2w/img-4.png" alt="sitting place" className="w-full sm:block hidden" />
+                            <img className="w-full sm:hidden" src="https://i.ibb.co/dpXStJk/Rectangle-29.png" alt="sitting place" />
+                        </div>
+                    </div>
                 </div>
-              </div>
-
-              <div className="p-6">
-                <h5 className="font-bold text-lg mb-3">The destination of Asthma project in DCS</h5>
-                <p className="text-gray-500 mb-4">
-                  <small>
-                    Published <u>13.01.2022</u>
-                    <a href="" className="text-gray-900">
-                      Anna Maria Doe
-                    </a>
-                  </small>
-                </p>
-                <p class="mb-4 pb-2">
-                  Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet
-                  diam orci, nec ornare metus semper sed. Integer volutpat
-                  ornare erat sit amet rutrum.
-                </p>
-                <Link
-                  href="#!"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                  className="inline-block px-6 py-2.5 bg-primary-lightgreen text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-black hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                >
-                  Read more
-                </Link>
-              </div>
             </div>
-          </div>
-          <div className="mb-6 lg:mb-0">
-            <div className="relative block bg-white rounded-lg shadow-lg">
-              <div className="flex">
-                <div
-                  class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBhdGllbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                    class="w-full"
-                  />
-                  <a href="#!"></a>
-                </div>
-              </div>
-
-              <div className="p-6">
-                <h5 className="font-bold text-lg mb-3">How to train GP practises to provide better patient care</h5>
-                <p className="text-gray-500 mb-4">
-                  <small>
-                    Published <u>13.01.2022</u>
-                    <a href="" className="text-gray-900">
-                      Anna Maria Doe
-                    </a>
-                  </small>
-                </p>
-                <p class="mb-4 pb-2">
-                  Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet
-                  diam orci, nec ornare metus semper sed. Integer volutpat
-                  ornare erat sit amet rutrum.
-                </p>
-                <Link
-                  href="#!"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                  className="inline-block px-6 py-2.5 bg-primary-lightgreen text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-black hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                >
-                  Read more
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-    </div>
-
-    </div>
   );
 };
 

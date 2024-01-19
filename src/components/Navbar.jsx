@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../images/dcsLogo.png';
+import logo from '../images/united_logo.png';
 
 
 import{MenuIcon, XIcon} from '@heroicons/react/outline';
@@ -14,7 +14,10 @@ const Navbar = () => {
     <div className='sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent'>
         <div className='px-2 flex justify-between items-center w-full h-full'>
         <div class="flex flex-shrink-0 items-center">
-          <img class="block h-8 w-auto" src={logo} alt="DATA CARE SOLUTIONS"/>
+          <img class="block h-10 w-auto" src={logo} alt="DATA CARE SOLUTIONS"/>
+          
+          <h1 className='text-3xl font-bold mr-4 sm:text-4xl'>አልባሽ</h1>
+          
           {/* <h1 className='text-1xl font-bold mr-4 sm:text-4xl'>Data Care Solutions</h1> */}
         </div>
             <div className='flex items-center cursor-pointer '>
@@ -25,18 +28,18 @@ const Navbar = () => {
                 {/* smooth={true}  duration={500} */}
                 <li > <Link to="about">About Us</Link></li>
                 {/*  smooth={true} offset={-200} duration={500}*/}
-                <li > <Link to="Smart_Tools_detail" >Product</Link></li>
+                <li > <Link to="Smart_Tools_detail" >Supports</Link></li>
                 {/*  smooth={true} offset={-50} duration={500}*/}
-                <li > <Link to="Service_detail" >Services</Link></li>
+                <li > <Link to="Service_detail" >Aim</Link></li>
                 {/* smooth={true} offset={-100} duration={500}*/}
-                <li > <Link to="Training">Training</Link></li>
-                <li > <Link to="Case_Study">Case Study</Link></li>
-                <li > <Link to="resources" >Resoruces</Link></li>
+               {/*} <li > <Link to="Training">Training</Link></li>
+               {/*} <li > <Link to="Case_Study">Case Study</Link></li>
+                {/*<li > <Link to="resources" >Resoruces</Link></li>
                 {/* smooth={true} offset={-50} duration={500}*/}
                 </ul>
             </div>
             <div className='hidden md:flex pr-4'>
-                <button className='border-none bg-transparent  text-black mr-4'><Link to="Login">Login</Link></button>
+                <button className='border-none bg-transparent  text-black mr-4'><Link to="Login">Join us whatsup</Link></button>
                 <button className='px-8 py-3 bg-primary-50 text-black'><Link to="Contact1">Contact Us</Link></button>
 
             </div>
