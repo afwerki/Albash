@@ -10,6 +10,7 @@ import bgimg from "../images/cyber-bg.png";
 import './Herostyle.css'
 import Hero from "./HeroSlieceTwo";
 import Article from "./articles/Article";
+import Test_Article from "./articles/Test_Article";
 import Teams_cardFlip from "./Teams_cardFlip";
 import Aim from "./Aim";
 import Talk_to_us from "./Talk_to_us";
@@ -24,7 +25,8 @@ const Home = () => {
     <div className="home-page">
    
       <Hero/>
-      <Article/>
+      {/*<Article/>*/}
+      <Test_Article/>
       <Teams_cardFlip/>
       <Aim/>
    
