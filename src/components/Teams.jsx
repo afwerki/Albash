@@ -27,7 +27,7 @@ const Teams = () => {
                 <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
               </div>
             </div>
-            <figure class="md:flex bg-slate-100 rounded-xl p-12 md:p-0 dark:bg-slate-800">
+             {/* <figure class="md:flex bg-slate-100 rounded-xl p-12 md:p-0 dark:bg-slate-800">
         <img
           class="w-24 h-24 rounded-full mx-auto"
           src={Jay}
@@ -36,7 +36,7 @@ const Teams = () => {
           height="512"
         />
         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-          <figcaption class="font-medium">
+        <figcaption class="font-medium">
             <div class="text-sky-500 dark:text-sky-400 font-sans-serif">
               {" "}
               Dr. Jay Verma
@@ -61,40 +61,7 @@ const Teams = () => {
             </p>
           </blockquote>
         </div>
-        <img
-          class="w-24 h-24 rounded-full mx-auto"
-          src={Sukin}
-          alt=""
-          width="384"
-          height="512"
-        />
-        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-          <figcaption class="font-medium">
-            <div class="text-sky-500 dark:text-sky-400 font-sans-serif">
-              Dr. Sukin Natarajan
-            </div>
-            <div class="text-slate-700 dark:text-slate-500 font-sans-serif">
-              Chief Technology Officer
-            </div>
-          </figcaption>
-          <blockquote>
-            <p class="text-md font-light font-sans-serif">
-              A partner at Heathrow Medical Centre, Sukin has extensive
-              experience in helping Hillingdon CCG with the roll out of IT
-              programmes for local practices. He was instrumental in helping
-              their local federation, Clover Health (CH) navigate its way
-              through IT and clinical governance issues. His input was
-              invaluable and helped CH win the General Practice Awards in 2017
-              for the Clinical Team of the Year for Paediatrics. Sukin has over
-              20 years of experience in finance management within the NHS. After
-              gaining a PhD from Brunel University in medical engineering, Sukin
-              was also a lecturer in Biomedical Sciences in the Masters
-              programme at Brunel. His IT knowledge has been instrumental in
-              connecting all of the local practices together.
-            </p>
-          </blockquote>
-        </div>
-      </figure>
+      </figure>*/}
             <div class="-mx-3 md:flex items-start">
               <div class="px-3 md:w-1/3">
                 <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">

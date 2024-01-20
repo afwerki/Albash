@@ -25,7 +25,7 @@ const HeroSlieceTwo = () => {
       <div className="relative flex flex-col mt-5 items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
         <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5 animate__animated animate__fadeIn animate__delay-1s">
           {/* Add animation classes to the container */}
-          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none  animate__animated animate__slideInLeft animate__delay-1s">
             አልባሽ
             <br className="hidden md:block" />
             ዋናው አላማችን{" "}
@@ -33,13 +33,13 @@ const HeroSlieceTwo = () => {
               የቻልነውን ማድረግ ነው።
             </span>
           </h2>
-          <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+          <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg  animate__animated animate__slideInRight animate__delay-1s">
             እኛ ለሻ የምናጠፋትን ብናጠራቅም የአንድ ህፃን የመኖር ተስፋውን እናለምንማለን።
           </p>
           <div className="flex items-center">
             <Link
               to="/"
-              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide bg-sky-500 text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none animate__animated animate__fadeIn animate__delay-2s"
+              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide bg-sky-500 text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none  animate__animated animate__bounce animate__delay-1s"
             >
               Learn more about what we do
             </Link>

@@ -25,8 +25,9 @@ const Home = () => {
     <div className="home-page">
    
       <Hero/>
-      {/*<Article/>*/}
-      <Test_Article/>
+      <Article/>
+      {/*the following commponet is slow loading exmple*/}
+     {/*} <Test_Article/>*/}
       <Teams_cardFlip/>
       <Aim/>
    
