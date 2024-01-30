@@ -1,3 +1,1 @@
-
-![image](https://github.com/afwerki/Data-Care-Solutions/assets/50844661/453bbf18-1a38-473b-8b91-ed38ced85dcd)
-
+![Albash UI](https://github.com/afwerki/Albash/assets/50844661/f4b87bd9-32f8-4085-9c19-adaae79178b1)
