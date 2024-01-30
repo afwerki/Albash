@@ -2,7 +2,6 @@ import { AcademicCapIcon } from "@heroicons/react/solid"
 import { Sparkles, ChartBar  } from 'heroicons-react'
 // import demandAndcapacity from "./images/arrow.png";
 // import fileAway from "./images/fileAway.jpg";
-// import SmartSearch from "./images/SmartSearch.png";
 
 const features = [
   {
